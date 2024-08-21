@@ -13,7 +13,7 @@ sed -i 's/# SSL_CLIENT_CERT_FILE/SSL_CLIENT_CERT_FILE/' docker-compose.yml
 sed -i '/SSL_CERT_FILE/d' docker-compose.yml
 sed -i '/SSL_KEY_FILE/d' docker-compose.yml
 clear
-echo "Please Input Marzban cert (after past use Ctrl + D): "
+echo "Please Input Marzban cert (after paste use Ctrl + D): "
 cat > /var/lib/marzban-node/ssl_client_cert.pem
 docker compose up -d
 clear
